@@ -78,15 +78,15 @@
             position: absolute;
             width: 1.9%; /* Percentage-based width */
             height: 3%; /* Percentage-based height */
-            background-color: transparent;
+            background-color: black;
             border: none;
             padding: 0;
             margin: 0;
-            
+/*             
             -webkit-appearance: none;
             -moz-appearance: none;
             outline: none;
-            appearance: none;
+            appearance: none; */
             cursor: pointer;
             pointer-events: auto;
         }
@@ -112,7 +112,8 @@
         <div class="header">
             <div class="header-text">
                 <h1>MAP at SXSW</h1>
-                <div class="subheader">Monash Assistive Technology Team</div>            </div>
+                <div class="subheader">Monash Assistive Technology Team</div>            
+            </div>
             <div class="logo">
                 <img src="logo.PNG" alt="MATT Logo">
             </div>
@@ -123,6 +124,10 @@
                 <button id="Button1" class="map-button" style="left: 78.3%; top: 34%;"></button>
                 <button id="Button2" class="map-button" style="left: 70.8%; top: 46.8%;"></button>
                 <button id="Button3" class="map-button" style="left: 71.9%; top: 71.6%;"></button>
+                <button id="Button4" class="map-button" style="left: 31.5%; top: 65.5%;"></button>
+                <button id="Button5" class="map-button" style="left: 40.5%; top: 75%;"></button>
+                <button id="Button6" class="map-button" style="left: 51.5%; top: 13.4%; transform: rotate(5deg);"></button>
+                <button id="Button7" class="map-button" style="left: 27%; top: 47.3%;"></button>
             </div>
         </div>
     </div>
@@ -132,22 +137,41 @@
         const audioStatus = document.getElementById('audio-status');
         let currentAudio = null;
 
-        // Custom button configurations
         const buttonConfigs = {
             Button1: {
                 audioSrc: "synthesis1.wav",
                 name: "The Law Library",
-                position: { left: "80%", top: "36%" }
+                position: { left: "78.3%", top: "34%" }
             },
             Button2: {
                 audioSrc: "synthesis2.wav",
                 name: "The Menzies",
-                position: { left: "71%", top: "47%" }
+                position: { left: "70.8%", top: "46.8%" }
             },
             Button3: {
                 audioSrc: "synthesis3.wav",
                 name: "Monash Connect",
-                position: { left: "70%", top: "80%" }
+                position: { left: "71.9%", top: "71.6%" }
+            },
+            Button4: {
+                audioSrc: "TheChancellery.wav",
+                name: "The Chancellery",
+                position: { left: "31.5%", top: "65.5%" }
+            },
+            Button5: {
+                audioSrc: "ReligiousCenter.wav",
+                name: "Religious Center",
+                position: { left: "40.5%", top: "75%" }
+            },
+            Button6: {
+                audioSrc: "IanPotterCenter.wav",
+                name: "The Ian Potter Center for Performing Arts    ",
+                position: { left: "51.5%", top: "13.4%" }
+            },
+            Button7: {
+                audioSrc: "RobertBlackwoodHall.wav",
+                name: "Robert Blackwood Hall",
+                position: { left: "51.5%", top: "13.4%" }
             }
         };
 
